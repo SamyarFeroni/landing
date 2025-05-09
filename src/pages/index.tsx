@@ -1,3 +1,9 @@
-export default function HomePage() {
-  return <div className="text-lg">test</div>;
+import Home from "@/components/Home/Home";
+
+export default function TheRouter() {
+  return (
+    <div>
+      <Home />
+    </div>
+  );
 }

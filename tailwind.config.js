@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./component/**/*.{js,ts,jsx,tsx}", // ← اصلاح این خط
+    "./app/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {},
   },
   plugins: [],
-}
-
+};
