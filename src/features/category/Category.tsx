@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { AppDispatch } from "@/store"; // مسیر دقیق فایل store.ts شما
-import { getPageComponents } from "@/pageComponents/action";
+import { AppDispatch } from "@/store/store"; // مسیر دقیق فایل store.ts شما
+import { getPageComponents } from "@/store/pageComponents/action";
 
 const Category = () => {
   const dispatch = useDispatch<AppDispatch>();

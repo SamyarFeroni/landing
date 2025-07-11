@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import pageComponentsReducer from '@/pageComponents/slice';
+import pageComponentsReducer from '@/store/pageComponents/slice';
 
 export const store = configureStore({
   reducer: {

@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import axios from "axios";
-import { pageComponentsAction } from "./slice";
+import { pageComponentsAction } from "@/store/pageComponents/slice";
 import { BASE_URL, LANDING_URL } from "@/utils/endPoint";
 
 export const getPageComponents = function () {
