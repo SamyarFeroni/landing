@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import "@/styles/globals.css";
 
 export const metadata = {
-  title: "My Shop",
+  title: "شگفت انگیز",
 };
 
 export default function RootLayout({
@@ -14,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="fa" dir="rtl">
+      <body className="max-w-[1220px] m-auto">
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

@@ -1,9 +1,14 @@
 // src/app/page.tsx
 
+import { Category, ProductsCard } from "@/features";
+
 export default function HomePage() {
   return (
-    <section className="p-8">
-      <h1 className="text-3xl font-bold">به فروشگاه ما خوش آمدید!</h1>
-    </section>
+    <div className="p-8">
+      <div className="text-3xl font-bold">
+        <Category />
+        <ProductsCard />
+      </div>
+    </div>
   );
 }
