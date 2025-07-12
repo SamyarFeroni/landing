@@ -17,8 +17,8 @@ const Category = () => {
     dispatch(fetchProducts());
   }, [dispatch]);
 
-  if (loading) return <p>در حال بارگذاری...</p>;
-  if (error) return <p>خطا: {error}</p>;
+  if (loading) return <p>loading</p>;
+  if (error) return <p>error: {error}</p>;
 
   const categories = Array.from(new Set(products.map((p) => p.category)));
 
