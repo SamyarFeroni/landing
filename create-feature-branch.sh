@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# chmod +x create-feature-branch.sh
+# ./create-feature-branch.sh
+
+
 # Prompt user for branch description
 read -p "🔤 Enter branch title (e.g. 'add login page'): " input_title
 
