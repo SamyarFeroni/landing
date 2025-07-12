@@ -1,11 +1,12 @@
 // src/app/layout.tsx
 
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import "@/styles/globals.css";
+import React from "react";
+import ReduxProvider from "@/lib/redux-provider";
+import "@/styles/globals.css"
+import AppLayout from "@/components/AppLayout";
 
 export const metadata = {
-  title: "My Shop",
+  title: "شگفت‌انگیز",
 };
 
 export default function RootLayout({
@@ -14,11 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="fa" dir="rtl">
       <body>
-        <Header />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+        <ReduxProvider>
+          <AppLayout>{children}</AppLayout>
+        </ReduxProvider>
       </body>
     </html>
   );

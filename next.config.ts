@@ -1,7 +1,11 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  onDemandEntries: {
+    maxInactiveAge: 1000,
+    pagesBufferLength: 2,
+  },
+  experimental: {},
 };
 
 export default nextConfig;
