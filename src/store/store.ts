@@ -1,11 +1,13 @@
-import { configureStore } from '@reduxjs/toolkit';
-import pageComponentsReducer from '@/store/pageComponents/slice';
+import { configureStore } from '@reduxjs/toolkit'
+import userReducer from '@/store/user/userSlice'
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
-    pageComponents: pageComponentsReducer,
+    user: userReducer,
   },
-});
+})
 
-export type RootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
+export type RootState = ReturnType<typeof store.getState>
+export type AppDispatch = typeof store.dispatch
+
+export default store

@@ -1,6 +1,3 @@
-export const banimodeUserProd = JSON.parse(
-  localStorage.getItem("banimodeUserProd")!
-);
 export const SCORE_PATH = `${process.env.PUBLIC_URL}/assets/score`;
 export const ICON_PATH = `${process.env.PUBLIC_URL}/assets/icon`;
 export const baseURL = "https://mobapi.banimode.com/api/backtoschool1402/";
